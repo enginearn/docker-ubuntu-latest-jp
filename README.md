@@ -4,7 +4,7 @@
 <summary>docker build</summary>
 
 ``` PowerShell
-$ docker build --no-cache -t enginearn/ubuntu-test:test -f .\Dockerfile .
+$ docker build --no-cache -t enginearn/ubuntu-latest-jp:latest -f .\Dockerfile .
 ```
 
 </details>
@@ -13,7 +13,7 @@ $ docker build --no-cache -t enginearn/ubuntu-test:test -f .\Dockerfile .
 <summary>docker run</summary>
 
 ``` PowerShell
-$ docker run -it -d --name ubuntu-test enginearn/ubuntu-test:test
+$ docker run -it -d --name ubuntu-latest enginearn/ubuntu-latest-jp:latest
 ```
 
 </details>
@@ -22,7 +22,7 @@ $ docker run -it -d --name ubuntu-test enginearn/ubuntu-test:test
 <summary>docker exec</summary>
 
 ``` PowerShell
-$ docker exec -it -u sudo_user ubuntu-test bash
+$ docker exec -it -u sudo_user ubuntu-latest bin/bash
 To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 
