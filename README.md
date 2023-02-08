@@ -4,7 +4,7 @@
 <summary>docker build</summary>
 
 ``` PowerShell
-$ docker build --no-cache -t enginearn/ubuntu-latest-jp:latest -f .\Dockerfile .
+> docker build --no-cache -t enginearn/ubuntu-latest-jp:latest -f .\Dockerfile .
 ```
 
 </details>
@@ -13,7 +13,7 @@ $ docker build --no-cache -t enginearn/ubuntu-latest-jp:latest -f .\Dockerfile .
 <summary>docker run</summary>
 
 ``` PowerShell
-$ docker run -it -d --name ubuntu-latest enginearn/ubuntu-latest-jp:latest
+> docker run -it -d --name ubuntu-latest enginearn/ubuntu-latest-jp:latest
 ```
 
 </details>
@@ -22,12 +22,21 @@ $ docker run -it -d --name ubuntu-latest enginearn/ubuntu-latest-jp:latest
 <summary>docker exec</summary>
 
 ``` PowerShell
-$ docker exec -it -u sudo_user ubuntu-latest bin/bash
+> docker exec -it -u sudo_user ubuntu-latest bin/bash
 To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 
 sudo_user@da3321b3c3b7:/$ date
-Sun May 22 00:44:54 JST 2022
+Tue Feb  7 21:22:33 JST 2023
+```
+
+</details>
+
+<details>
+<summary>docker push</summary>
+
+``` PowerShell
+docker push enginearn/ubuntu-latest-jp
 ```
 
 </details>

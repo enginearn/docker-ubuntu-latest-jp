@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y sudo neovim tzdata python3-pip && \
     ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
